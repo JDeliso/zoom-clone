@@ -34,4 +34,4 @@ server.listen(3000)
 const peerServer = ExpressPeerServer(server, {
     path: '/'
 })
-app.user('/peerjs', peerServer)
+app.use('/peerjs', peerServer)
